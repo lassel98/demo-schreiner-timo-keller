@@ -196,6 +196,7 @@ header.site-header.scrolled {
 .hero--fullbg {
     padding-top: 8rem;
     padding-bottom: 3rem;
+    align-items: flex-start;
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
