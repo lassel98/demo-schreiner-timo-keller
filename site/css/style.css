@@ -194,7 +194,7 @@ header.site-header.scrolled {
 
 /* Fullscreen background hero variant */
 .hero--fullbg {
-    padding-top: 6rem;
+    padding-top: 8rem;
     padding-bottom: 3rem;
     background-size: cover;
     background-position: center 40%;
@@ -257,7 +257,7 @@ header.site-header.scrolled {
 
 /* Dark trust badge variant (for use on dark/image backgrounds) */
 .hero--fullbg .trust-badge {
-    margin-top: 0;
+    margin-top: 1.5rem;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
