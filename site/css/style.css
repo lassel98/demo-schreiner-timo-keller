@@ -14,6 +14,8 @@
     --spacing-2: 2rem;
     --spacing-3: 4rem;
     --spacing-4: 8rem;
+    --spacing-5: 10rem;
+    --spacing-6: 12rem;
     
     --container-width: 1280px;
 }
@@ -179,7 +181,7 @@ header.site-header.scrolled {
    ========================================================================== */
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     position: relative;
