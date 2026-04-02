@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Timo Keller." [ref=e4] [cursor=pointer]:
+        - /url: "#"
+      - navigation [ref=e5]:
+        - 'link "Jetzt anrufen: 01525 8645219" [ref=e6] [cursor=pointer]':
+          - /url: tel:+4915258645219
+  - main [ref=e7]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: ★★★★★
+        - text: 5.0 Sterne auf Google · 6 Bewertungen
+      - heading "Holzhandwerk in Perfektion. Einzelstücke aus Würzburg." [level=1] [ref=e13]
+      - paragraph [ref=e14]: Ihre Vision aus Holz. Präzise und mit Leidenschaft gefertigt von Schreiner Timo Keller. Alles genauer zu machen als die Anderen, das ist mein Ehrgeiz.
+      - generic [ref=e15]:
+        - link "Projekt anfragen" [ref=e16] [cursor=pointer]:
+          - /url: "#kontakt"
+        - link "Meine Arbeiten" [ref=e17] [cursor=pointer]:
+          - /url: "#arbeiten"
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - img "Schreiner Timo Keller bei der Arbeit – Schwalbenschwanz in der Werkstatt Würzburg" [ref=e22]
+        - generic [ref=e23]: Meine Werkstatt in Würzburg
+      - generic [ref=e24]:
+        - generic [ref=e25]: Über mich
+        - heading "Leidenschaft, die man sieht." [level=2] [ref=e26]
+        - paragraph [ref=e27]: Holz ist für mich kein Werkstoff — es ist eine Sprache. Jede Maserung erzählt eine Geschichte, jede Verbindung ist ein Versprechen an Qualität.
+        - paragraph [ref=e28]: 2014 habe ich meine Lehre zum Schreiner in Würzburg begonnen und 2017 meinen Gesellenbrief erhalten. Seitdem arbeite ich täglich mit dem Anspruch, nicht nur gute — sondern ausnahmslos präzise Arbeit zu liefern.
+        - blockquote [ref=e29]:
+          - text: "\"Wen ärgert es nicht, eine krumm eingebaute Türe zu haben? Genau das treibt mich an.\""
+          - generic [ref=e30]: — Timo Keller
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: 10+
+            - generic [ref=e34]: Jahre Erfahrung
+          - generic [ref=e35]:
+            - generic [ref=e36]: 100%
+            - generic [ref=e37]: Handarbeit
+          - generic [ref=e38]:
+            - generic [ref=e39]: 5.0★
+            - generic [ref=e40]: Google Bewertung
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]: Was ich mache
+        - heading "Meine Expertise." [level=2] [ref=e45]
+      - generic:
+        - img "Maßgefertigter Holz-Innenausbau – Wohnraumgestaltung von Schreiner Timo Keller Würzburg"
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - img [ref=e49]
+          - heading "Individuelle Möbel" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Einbauschränke, Tische und Einzelstücke, die nahtlos in Ihre Räume passen. Keine Standardware — 100% Handarbeit nach Maß.
+        - generic [ref=e54]:
+          - img [ref=e56]
+          - heading "Präziser Innenausbau" [level=3] [ref=e59]
+          - paragraph [ref=e60]: Böden, Türen, Wandverkleidungen. Perfekt eingepasst, ohne Kompromisse. Denn Genauigkeit ist meine Überzeugung.
+        - generic [ref=e61]:
+          - img [ref=e63]
+          - heading "Beratung & Planung" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Kostenlose Vor-Ort Termine. Wir sprechen über Materialauswahl, Pflege und das Design Ihres nächsten Holz-Projekts.
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]: Referenzen
+        - heading "Meine Arbeiten." [level=2] [ref=e72]
+        - paragraph [ref=e73]: Bilder sagen mehr als tausend Worte. Überzeugen Sie sich selbst.
+      - generic [ref=e74]:
+        - generic [ref=e75] [cursor=pointer]:
+          - img "Maßgefertigte Holz-Wandverkleidung und Einrichtung – Referenzprojekt Timo Keller Würzburg" [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e78]: Innenausbau
+            - heading "Wohnzimmer Wandverkleidung" [level=4] [ref=e79]
+        - generic [ref=e80] [cursor=pointer]:
+          - img "Zapfenverbindung in Eiche – Handwerkspräzision von Timo Keller" [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]: Handwerk
+            - heading "Zapfenverbindung in Eiche" [level=4] [ref=e84]
+        - generic [ref=e85] [cursor=pointer]:
+          - img "Schwalbenschwanzverbindung – Werkstattarbeit Schreiner Würzburg" [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]: Fertigung
+            - heading "Schwalbenschwanz in der Werkstatt" [level=4] [ref=e89]
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Ihr Projekt
+            - heading "Das nächste Bild könnte Ihr Projekt sein." [level=4] [ref=e94]
+          - link "Jetzt anfragen" [ref=e95] [cursor=pointer]:
+            - /url: "#kontakt"
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - generic [ref=e99]: Was Kunden sagen
+        - heading "6× Fünf Sterne." [level=2] [ref=e100]
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: ★★★★★
+          - paragraph [ref=e104]: "\"Timo hat uns einen maßgefertigten Einbauschrank gebaut — die Passgenauigkeit ist beeindruckend. Kein Spalt, kein Kompromiss. Absolute Empfehlung!\""
+          - generic [ref=e105]:
+            - generic [ref=e106]: MH
+            - generic [ref=e107]:
+              - strong [ref=e108]: Markus H.
+              - text: Würzburg
+        - generic [ref=e109]:
+          - generic [ref=e110]: ★★★★★
+          - paragraph [ref=e111]: "\"Ich bin sehr zufrieden mit der Arbeit. Die Küche sieht genau so aus wie besprochen — persönliche Beratung, kompetente Umsetzung. Vielen Dank, Timo!\""
+          - generic [ref=e112]:
+            - generic [ref=e113]: SK
+            - generic [ref=e114]:
+              - strong [ref=e115]: Sandra K.
+              - text: Würzburg
+        - generic [ref=e116]:
+          - generic [ref=e117]: ★★★★★
+          - paragraph [ref=e118]: "\"Top Qualität, pünktlich, sauber und freundlich. Unser Parkett liegt jetzt perfekt — man merkt, dass Timo mit echtem Herzblut bei der Sache ist.\""
+          - generic [ref=e119]:
+            - generic [ref=e120]: TR
+            - generic [ref=e121]:
+              - strong [ref=e122]: Thomas R.
+              - text: Würzburg
+    - generic [ref=e124]:
+      - generic [ref=e125]: Kontakt
+      - heading "Sprechen wir über Ihr nächstes Holz-Projekt." [level=2] [ref=e126]:
+        - text: Sprechen wir über Ihr nächstes
+        - emphasis [ref=e127]: Holz-Projekt
+        - text: .
+      - paragraph [ref=e128]: Kostenlose Erstberatung vor Ort — in Würzburg und Umgebung. Ich freue mich auf Ihr Projekt.
+      - 'link "Direkt Anrufen: 01525 8645219" [ref=e129] [cursor=pointer]':
+        - /url: tel:+4915258645219
+      - paragraph [ref=e130]:
+        - text: "Oder per E-Mail:"
+        - link "mail@schreiner-timo-keller.de" [ref=e131] [cursor=pointer]:
+          - /url: mailto:mail@schreiner-timo-keller.de
+  - contentinfo [ref=e132]:
+    - paragraph [ref=e134]: © 2026 Schreiner Timo Keller | Lindenstraße 50, 97084 Würzburg | Demo built by Assel Studio.
