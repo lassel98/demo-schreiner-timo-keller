@@ -185,7 +185,7 @@ header.site-header.scrolled {
    ========================================================================== */
 /* Hero Section */
 .hero {
-    min-height: 75vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -194,8 +194,8 @@ header.site-header.scrolled {
 
 /* Fullscreen background hero variant */
 .hero--fullbg {
-    padding-top: 10rem;
-    padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
@@ -221,7 +221,7 @@ header.site-header.scrolled {
 
 .hero--fullbg .hero-content {
     max-width: 680px;
-    padding: var(--spacing-3) 0;
+    padding: 1.5rem 0;
     opacity: 0; /* GSAP will handle */
     transform: translateY(30px);
 }
@@ -257,7 +257,7 @@ header.site-header.scrolled {
 
 /* Dark trust badge variant (for use on dark/image backgrounds) */
 .hero--fullbg .trust-badge {
-    margin-top: calc(var(--spacing-3) - 1rem);
+    margin-top: 0;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
