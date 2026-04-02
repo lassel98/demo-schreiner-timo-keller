@@ -8,9 +8,7 @@
     <meta name="description" content="Holzhandwerk in Perfektion. Einzelstücke aus Würzburg. Ihre Vision aus Holz, präzise gefertigt von Schreiner Timo Keller.">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -52,20 +50,23 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
-        <section class="hero hero--fullbg" id="home" style="background-image: url('img/workshop-hero.png');">
+        <!-- SCROLL HERO SECTION -->
+        <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
-                    <div class="trust-badge trust-badge--dark">
+                    <div class="trust-badge">
                         <span class="stars">★★★★★</span>
-                        5.0 Sterne auf Google · 6 Bewertungen
+                        5.0 Sterne auf Google
                     </div>
                     <h1>Holzhandwerk in <span class="text-accent">Perfektion</span>. Einzelstücke aus Würzburg.</h1>
                     <p>Ihre Vision aus Holz. Präzise und mit Leidenschaft gefertigt von Schreiner Timo Keller. Alles genauer zu machen als die Anderen, das ist mein Ehrgeiz.</p>
-                    <div class="hero-ctas">
-                        <a href="#kontakt" class="btn">Projekt anfragen</a>
-                        <a href="#arbeiten" class="btn btn-outline btn-outline--light">Meine Arbeiten</a>
-                    </div>
+                    <a href="#kontakt" class="btn">Projekt anfragen</a>
+                </div>
+            </div>
+            
+            <div class="hero-3d-wrapper">
+                <div class="hero-3d-placeholder" data-speed="0.8" style="border:none; padding:0; overflow:hidden;">
+                    <img src="img/hero.webp" alt="Wood Joinery Detail" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
                 </div>
             </div>
         </section>
@@ -73,14 +74,7 @@
         <!-- PHILOSOPHY / ABOUT -->
         <section class="about" id="philosophie">
             <div class="container about-grid">
-                <div class="about-image-wrap gsap-reveal">
-                    <div class="about-image">
-                        <img src="img/about.png" alt="Schreiner Timo Keller bei der Arbeit – Schwalbenschwanz in der Werkstatt Würzburg" loading="lazy">
-                    </div>
-                    <div class="about-image-caption">Meine Werkstatt in Würzburg</div>
-                </div>
-                <div class="about-text gsap-reveal" data-delay="0.2">
-                    <span class="section-label">Über mich</span>
+                <div class="about-text gsap-reveal">
                     <h2>Leidenschaft, die <span class="text-accent">man sieht</span>.</h2>
                     <p>Holz ist für mich kein Werkstoff — es ist eine Sprache. Jede Maserung erzählt eine Geschichte, jede Verbindung ist ein Versprechen an Qualität.</p>
                     <p>2014 habe ich meine Lehre zum Schreiner in Würzburg begonnen und 2017 meinen Gesellenbrief erhalten. Seitdem arbeite ich täglich mit dem Anspruch, nicht nur gute — sondern ausnahmslos präzise Arbeit zu liefern.</p>
@@ -259,6 +253,7 @@
     <footer class="footer-bottom">
         <div class="container">
             <p>&copy; 2026 Schreiner Timo Keller | Lindenstraße 50, 97084 Würzburg | Demo built by Assel Studio.</p>
+            <p style="margin-top: 10px;"><a href="impressum.html" style="color: inherit; text-decoration: underline;">Impressum</a> | <a href="datenschutz.html" style="color: inherit; text-decoration: underline;">Datenschutz</a></p>
         </div>
     </footer>
 
