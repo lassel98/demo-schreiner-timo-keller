@@ -186,6 +186,54 @@ header.site-header.scrolled {
     padding-top: var(--spacing-4);
 }
 
+/* Fullscreen background hero variant */
+.hero--fullbg {
+    padding-top: 0;
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+}
+
+.hero--fullbg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        105deg,
+        rgba(8, 6, 4, 0.78) 0%,
+        rgba(8, 6, 4, 0.55) 55%,
+        rgba(8, 6, 4, 0.30) 100%
+    );
+}
+
+.hero--fullbg .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero--fullbg .hero-content {
+    max-width: 680px;
+    padding: var(--spacing-4) 0;
+    opacity: 0; /* GSAP will handle */
+    transform: translateY(30px);
+}
+
+.hero--fullbg .hero-content h1,
+.hero--fullbg .hero-content h1 .text-accent {
+    color: #FAFAF9;
+}
+
+.hero--fullbg .hero-content .text-accent {
+    color: #E8A87C;
+}
+
+.hero--fullbg .hero-content p {
+    color: rgba(250, 250, 249, 0.85);
+    margin: var(--spacing-2) 0;
+    font-size: 1.25rem;
+}
+
 .hero-content {
     position: relative;
     z-index: 10;
@@ -200,33 +248,26 @@ header.site-header.scrolled {
     margin: var(--spacing-2) 0;
 }
 
-.hero-3d-wrapper {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50vw;
-    height: 80vh;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(193, 127, 89, 0.1) 0%, rgba(250, 250, 249, 0) 70%);
+/* Dark trust badge variant (for use on dark/image backgrounds) */
+.trust-badge--dark {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.hero-3d-placeholder {
-    width: 60%;
-    height: 60%;
-    border: 2px dashed var(--accent);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--accent);
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2rem;
+/* Light outline button variant for dark backgrounds */
+.btn-outline--light {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline--light:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: white;
+    transform: translateY(-2px);
 }
 
 /* Philosophie / About Section */
@@ -354,6 +395,10 @@ header.site-header.scrolled {
 
     .hero-ctas {
         justify-content: center;
+    }
+
+    .hero--fullbg .hero-content {
+        padding: 0;
     }
 
     .about-stats {

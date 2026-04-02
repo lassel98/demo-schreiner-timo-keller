@@ -13,20 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 0.2
     });
 
-    // Parallax effect for the 3D Placeholder
-    const parallaxImages = document.querySelectorAll(".hero-3d-placeholder");
-    parallaxImages.forEach(img => {
-        const speed = img.getAttribute("data-speed") || 0.5;
-        gsap.to(img, {
-            y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".hero",
-                start: "top top",
-                end: "bottom top",
-                scrub: true
-            }
-        });
+    // Parallax on hero background via background-position
+    gsap.to(".hero--fullbg", {
+        backgroundPositionY: "65%",
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+        }
     });
 
     // Reveal Animations on Scroll
