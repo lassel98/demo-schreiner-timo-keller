@@ -102,6 +102,10 @@ header.site-header {
     transition: background 0.3s ease, padding 0.3s ease;
 }
 
+.site-header.header--over-dark:not(.scrolled) .logo {
+    color: #FAFAF9;
+}
+
 header.site-header.scrolled {
     background: rgba(250, 250, 249, 0.95);
     backdrop-filter: blur(10px);
@@ -190,7 +194,8 @@ header.site-header.scrolled {
 
 /* Fullscreen background hero variant */
 .hero--fullbg {
-    padding-top: 0;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
@@ -251,7 +256,8 @@ header.site-header.scrolled {
 }
 
 /* Dark trust badge variant (for use on dark/image backgrounds) */
-.trust-badge--dark {
+.hero--fullbg .trust-badge {
+    margin-top: calc(var(--spacing-3) - 1rem);
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
