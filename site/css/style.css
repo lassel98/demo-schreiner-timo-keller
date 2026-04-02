@@ -335,25 +335,421 @@ header.site-header.scrolled {
     .about-grid, .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .hero {
         text-align: center;
         align-items: flex-start;
         padding-top: 15vh;
     }
-    
+
     .hero-content {
         max-width: 100%;
     }
-    
+
     .hero-3d-wrapper {
         top: 60%;
         width: 100%;
         height: 40vh;
     }
+
+    .hero-ctas {
+        justify-content: center;
+    }
+
+    .about-stats {
+        gap: 1.25rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .portfolio-item--large {
+        grid-column: 1;
+        grid-row: auto;
+        height: 300px;
+    }
+
+    .portfolio-item {
+        height: 260px;
+    }
+
+    .portfolio-item--cta {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .portfolio-cta-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.25rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* Utility constraints */
+/* ==========================================================================
+   Section Labels
+   ========================================================================== */
+.section-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+}
+
+/* ==========================================================================
+   Hero CTA Buttons
+   ========================================================================== */
+.hero-ctas {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   About Section Enhancements
+   ========================================================================== */
+.about-image-caption {
+    text-align: center;
+    font-size: 0.78rem;
+    color: rgba(250, 250, 249, 0.45);
+    margin-top: 0.75rem;
+    font-style: italic;
+    letter-spacing: 0.03em;
+}
+
+.about-quote {
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: rgba(250, 250, 249, 0.9);
+    max-width: 100%;
+}
+
+.about-quote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-family: var(--font-body);
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.about-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(250, 250, 249, 0.1);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--accent);
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    color: rgba(250, 250, 249, 0.5);
+    margin-top: 0.3rem;
+    letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   Service Icons
+   ========================================================================== */
+.service-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+/* Services Banner */
+.services-banner {
+    margin-top: 2.5rem;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 420px;
+}
+
+.services-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+}
+
+/* ==========================================================================
+   Portfolio Section
+   ========================================================================== */
+.portfolio {
+    background: var(--bg-color);
+}
+
+.portfolio-header {
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-header p {
+    color: rgba(26, 26, 26, 0.55);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 260px auto;
+    gap: 1rem;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #2a2a2a;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.06);
+}
+
+.portfolio-item--large {
+    grid-column: span 2;
+    grid-row: 1 / span 2;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.68));
+    color: white;
+    transform: translateY(6px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 0.68rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.portfolio-overlay h4 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: white;
+    margin: 0;
+}
+
+.portfolio-item--cta {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background: var(--text-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 3rem;
+    cursor: default;
+}
+
+.portfolio-item--cta:hover img {
+    transform: none;
+}
+
+.portfolio-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.portfolio-cta-label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-cta-inner h4 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1.25;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+   Testimonials Section
+   ========================================================================== */
+.testimonials {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.testimonials-header {
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: rgba(193, 127, 89, 0.35);
+}
+
+.testimonial-stars {
+    color: #FFB800;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.testimonial-card p {
+    color: rgba(250, 250, 249, 0.78);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: white;
+    flex-shrink: 0;
+    letter-spacing: 0.04em;
+}
+
+.testimonial-author strong {
+    display: block;
+    font-size: 0.88rem;
+    color: var(--bg-color);
+    font-weight: 600;
+}
+
+.testimonial-author span {
+    font-size: 0.78rem;
+    color: rgba(250, 250, 249, 0.4);
+}
+
+/* ==========================================================================
+   CTA Footer Enhancements
+   ========================================================================== */
+.cta-footer h2 em {
+    font-style: italic;
+    color: var(--bg-color);
+}
+
+.cta-section-label {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-sub {
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 520px;
+    margin: 1rem auto 2.5rem;
+    font-size: 1.05rem;
+}
+
+.cta-btn {
+    font-size: 1rem;
+}
+
+.cta-email {
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+.cta-email a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ==========================================================================
+   Utility constraints
+   ========================================================================== */
 .gsap-reveal {
     opacity: 0;
     transform: translateY(40px);
