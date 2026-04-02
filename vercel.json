@@ -11,6 +11,10 @@
     {
       "source": "/js/(.*)",
       "destination": "/site/js/$1"
+    },
+    {
+      "source": "/img/(.*)",
+      "destination": "/site/img/$1"
     }
   ]
 }
